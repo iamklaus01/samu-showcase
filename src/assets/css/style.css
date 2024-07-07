@@ -1,0 +1,812 @@
+/*===================
+	Start Header CSS 
+=====================*/
+.header{
+	background-color:#fff;
+	position:relative;
+}
+.header .navbar-collapse{
+	padding:0;
+}
+/* Topbar */
+.topbar {
+	padding: 10px 0;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.topbar ul li {
+	display: inline-block;
+}
+
+.topbar ul li a {
+	color: #7c7cd5;
+    font-weight: 500;
+}
+
+.topbar ul li a .top-icon {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	color: #7c7cd5;
+}
+
+.topbar .topbar-left ul li:first-child {
+	margin-right: 35px;
+}
+
+.topbar .topbar-left ul li a .top-icon {
+	margin-right: 10px;
+}
+
+.topbar .topbar-right {
+	text-align: right;
+}
+
+.topbar .topbar-right ul li {
+	margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+	.topbar {
+		display: none;
+	}
+}
+.header .header-inner {
+	background:#fff;
+	z-index:999;
+	width:100%;
+}
+.cta-cover{
+	margin-top:12px;
+}
+.cta-cover .btn{
+	color:#fff;
+}
+.header .logo {
+	float: left;
+	margin-top: 18px;
+}
+.header .navbar {
+	background: none;
+	box-shadow: none;
+	border: none;
+	margin: 0;
+	height: 0px;
+	min-height: 0px;
+}
+.header .nav li{
+	margin-right: 15px;
+    float: left;
+	position:relative;
+}
+.header .nav li:last-child{
+	margin:0;
+}
+.header .nav li a {
+	color: #2C2D3F;
+	font-weight: 500;
+	text-transform: capitalize;
+	padding: 25px 12px;
+	position: relative;
+	display: inline-block;
+	position:relative;
+}
+.header .nav li a::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width:0%;
+	background: #7c7cd5;
+	border-radius: 5px 5px 0 0;
+	opacity:0;
+	visibility:hidden;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.header .nav li.active a:before{
+	opacity:1;
+	visibility:visible;
+	width: 100%;
+}
+.header .nav li.active a{
+	color:#7c7cd5;
+}
+.header .nav li:hover a:before{
+	opacity:1;
+	width: 100%;
+	visibility:visible;
+}
+.header .nav li:hover a{
+	color:#7c7cd5;
+}
+.header .nav li a i {
+	display: inline-block;
+	margin-left: 1px;
+}
+/* Middle Header */
+
+.header .middle-header {
+	background: #fff;
+	padding: 20px 0px;
+}
+
+/* Header Sticky */
+.header.sticky .header-inner{
+	position:fixed;
+	z-index:999;
+	top:0;
+	left:0;
+	bottom:initial;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	animation: fadeInDown 0.5s both 0.1s;
+	box-shadow:0px 0px 13px #00000054;
+}
+/*=========================
+	End Header CSS
+===========================*/
+
+/*===========================
+	Start Hero Area CSS
+=============================*/
+.slider .single-slider {
+	position: relative;
+	z-index: 1;
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+.slider .single-slider::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-image: -webkit-gradient(linear, left top, right top, from(#7c7cd5), color-stop(70.76%, rgba(124, 124, 213, 0.11)), to(rgba(255, 255, 255, 0)));
+	background-image: linear-gradient(to right, #7c7cd5 0%, rgba(124, 124, 213, 0.11) 70.76%, rgba(255, 255, 255, 0) 100%);
+}
+
+.slider .single-slider .text{
+	padding-top:100px;
+}
+
+.slider .single-slider h1 {
+	color: #fff;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	line-height: 52px;
+}
+
+.slider .single-slider p {
+	color: #fff;
+	margin-top: 30px;
+	font-weight: 400;
+}
+.slider .single-slider .button{
+	margin-top:60px;
+}
+.slider .single-slider .btn{
+	color:#fff;
+	background:#0000bb;
+	font-weight:500;
+	display:inline-block;
+	margin:0;
+	margin-right:10px;
+}
+.slider .single-slider .btn:last-child{
+	margin:0;
+}
+.slider .single-slider .btn.primary{
+	background:#2C2D3F;
+	color:#fff;
+}
+.slider .single-slider .btn.primary:before{
+	background:#7c7cd5;
+}
+
+/* Slider Animation */
+.owl-item.active .single-slider h1{
+    animation: fadeInUp 1s both 0.6s;
+}
+.owl-item.active .single-slider p{
+    animation: fadeInUp 1s both 1s;
+}
+.owl-item.active .single-slider .button{
+    animation: fadeInDown 1s both 1.5s;
+}
+/*===========================
+	End Hero Area CSS
+=============================*/
+
+/*=============================
+	Start feature CSS
+===============================*/
+.feature {
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	height: 230px;
+}
+.feature .feature-inner {
+	position: relative;
+	transform: translateY(-35%);
+	z-index:9;
+}
+.feature .single-feature {
+	position: relative;
+    height: 100%;
+	text-align: left;
+	z-index:3;
+	border-radius:5px;
+	background:#7c7cd5;
+	 -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+.feature .single-feature .inner {
+	overflow:hidden;
+	position: relative;
+	padding:30px;
+	z-index:2;
+}
+.feature .single-feature:before{
+	position: absolute;
+    z-index: -1;
+    content: '';
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+    height: 90%;
+    background:#7c7cd5;
+    opacity: 0;
+    filter: blur(10px);
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+.feature .single-feature:hover:before{
+	opacity: 0.8;
+}
+.feature .single-feature:hover{
+	transform: translateY(-5px);
+}
+.feature .single-feature .icon .feature-icon{
+	position: absolute;
+	font-size: 110px;
+	color: #fff;
+	 -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+	z-index:-1;
+	visibility:visible;
+	opacity:0.2;
+	right: -25px;
+	bottom: -30px;
+}
+.feature .single-feature span{
+	display:block;
+	color:#fff;
+}
+.feature .single-feature h4{
+	font-size: 20px;
+	font-weight:600;
+	display:inline-block;
+	text-transform:capitalize;
+	color:#fff;
+	margin-top:13px;
+}
+.feature .single-feature p{
+	color:#fff;
+	margin-top:22px;
+}
+.feature .single-feature a {
+	color: #fff;
+	margin-top: 25px;
+	font-weight: 500;
+	display: inline-block;
+	position: relative;
+}
+.feature .single-feature a:before{
+	position:absolute;
+	content:"";
+	left:0;
+	bottom:0;
+	height:1px;
+	width:0%;
+	background:#fff;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.feature .single-feature a:hover:before{
+	width:100%;
+	width:100%;
+}
+
+.feature .single-feature .time-sidual{
+	overflow:hidden;
+	margin-top:17px;
+}
+.feature .single-feature .time-sidual li {
+	display: block;
+	color: #fff;
+	width: 100%;
+	margin-bottom:3px;
+}
+.feature .single-feature .time-sidual li:last-child{
+	margin:0;
+}
+.feature .single-feature .time-sidual li span{
+	display:inline-block;
+}
+.feature .single-feature .day-head .time {
+	font-weight: 400;
+	float: right;
+}
+/*=============================
+	End feature CSS
+===============================*/
+
+/*=============================
+	Start ready-to-help CSS
+===============================*/
+.ready-to-help.section{
+	padding-top:50px;
+}
+
+.ready-to-help .single-process{
+	text-align:center;
+	position:relative;
+	padding:10px 20px;
+}
+.ready-to-help .single-process::before {
+	position: absolute;
+	content: "";
+	right: -72px;
+	top: 60px;
+	width: 118px;
+	border-bottom: 3px dotted #7c7cd5;
+}
+.ready-to-help .single-process.last::before{
+	display:none;
+}
+.ready-to-help .single-process .single-icon{
+	position:relative;
+}
+.ready-to-help .single-process .single-icon .process-icon{
+	color:#7c7cd5;
+	position:absolute;
+	left:50%;
+	margin-left:-50px;
+	top:0;
+    padding: 15px;
+	height:100px;
+	width:100px;
+	line-height:80px;
+	text-align:center;
+	border:1px solid #dddddd;
+	border-radius:100%;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.ready-to-help .single-process:hover .single-icon .process-icon{
+	background:#7c7cd5;
+	color:#fff;
+	border-color:transparent;
+}
+.ready-to-help .single-process h3{
+	padding-top: 128px;
+	color:#2C2D3F;
+	font-weight:600;
+	font-size:21px;
+}
+.ready-to-help .single-process p {
+	margin-top: 20px;
+}
+/*=============================
+	End ready-to-help CSS
+===============================*/
+
+/*=======================
+	Start Stats CSS
+=========================*/
+.stats{
+	position:relative;
+}
+.stats.section{
+	padding:120px 0;
+}
+.stats.section .row{
+	margin-right: 0;
+	margin-left: 0;
+}
+.stats{
+	background:url('../images/bg/stats-bg.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.stats .single-stat {
+    position: relative;
+}
+.stats .single-stat .stat-icon {
+	position: absolute;
+	left: 0;
+	font-size: 32px;
+	color: #fff;
+	height: 70px;
+	width: 70px;
+	line-height: 67px;
+	text-align: center;
+	padding: 10px;
+	margin: 0;
+	border: 2px solid #fff;
+	border-radius: 0px;
+	top: 50%;
+	margin-top: -35px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border-radius: 50%;
+}
+.stats .single-stat:hover .stat-icon{
+	color:#7c7cd5;
+	background:#fff;
+	border-color:transparent;
+}
+.stats .single-stat .content {
+	padding-left: 80px;
+}
+.stats .single-stat span {
+	color: #fff;
+	font-weight: 600;
+	font-size: 30px;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s eas;
+	margin-bottom: 7px;
+}
+.stats .single-stat p{
+	color:#fff;
+	font-size:15px;
+}
+/*===================
+	End Stats
+=====================*/
+
+/*===================
+	Why choose CSS
+=====================*/
+.why-choose .choose-left h3{
+	font-size:24px;
+	font-weight:600;
+	color:#2C2D3F;
+	position:relative;
+	padding-bottom:20px;
+	margin-bottom:24px;
+}
+.why-choose .choose-left h3:before{
+	position:absolute;
+	content:"";
+	left:0;
+	bottom:0;
+	height:2px;
+	width:50px;
+	background:#7c7cd5;
+}
+.why-choose .choose-left p{
+	margin-bottom:35px;
+}
+.why-choose .choose-left .list li {
+	color: #868686;
+	margin-bottom: 12px;
+}
+.why-choose .choose-left .list li:last-child{
+	margin-bottom:0px;
+}
+/* Start Faq CSS */
+.why-choose{
+	background:#fff;
+}
+.why-choose .choose-right{
+	height:100%;
+	width:100%;
+	position:relative;
+}
+.why-choose .choose-right .video {
+	color: #fff;
+	height: 70px;
+	width: 70px;
+	line-height: 70px;
+	text-align: center;
+	border-radius: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -35px;
+	margin-top: -35px;
+	font-size: 21px;
+	background: #7c7cd5;
+	padding-left: 4px;
+}
+.why-choose .choose-right .video:hover{
+	transform:scale(1.1);
+}
+
+/*=======================
+	End Why choose CSS
+=========================*/
+
+/*===============================
+	Start Call to action CSS
+=================================*/
+.call-action{
+	background-image:url('../images/bg/call-bg.jpg');
+	background-size:cover;
+	background-position:center;
+	position:relative;
+	background-repeat:no-repeat;
+}
+.call-action .content{
+	text-align:center;
+	padding:100px 265px;
+    background: transparent;
+}
+.call-action .content h2{
+	color:#fff;
+	font-size:36px;
+	font-weight:600;
+	line-height:46px;
+}
+.call-action .content p {
+	color: #fff;
+	margin: 30px 0px;
+	font-size: 20px;
+	word-spacing: 2px;
+}
+.call-action .content .btn{
+	background:#fff;
+	margin-right:20px;
+	font-weight:500;
+	border:1px solid #fff;
+	color:#7c7cd5;
+	text-transform: inherit;
+}
+.call-action .content .btn:before{
+	background:#7c7cd5;
+}
+.call-action .content .btn:hover{
+	background:#7c7cd5;
+	color:#fff;
+}
+.call-action .content .btn:last-child{
+	margin-right:0px;
+}
+
+/* Services css */
+.service-section .service-item {
+	border-radius: 20px;
+	-webkit-box-shadow: 0 10px 35px rgba(124, 124, 213, 0.14);
+	box-shadow: 0 10px 35px rgba(124, 124, 213, 0.14);
+	-webkit-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	position: relative;
+	padding: 40px;
+	z-index: 1;
+}
+
+.service-section .service-item .service-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2C2D3F;
+	margin-bottom: 20px;
+}
+
+.service-section .service-item .service-content p {
+	font-size: 16px;
+	line-height: 25px;
+	margin-bottom: 25px;
+}
+
+.service-section .service-item .service-icon .service-icon-icon{
+	font-size: 50px;
+	color: #7c7cd5;
+}
+.service-section .service-item .service-icon{
+	margin-bottom: 20px;
+}
+.service-section .service-item .service-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	border-radius: 20px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+
+.service-section .service-item .service-overlay::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 20px;
+	background: rgba(124, 124, 213, 0.91);
+}
+.service-section .service-item:hover .service-icon .service-icon-icon{
+	color: #fff;
+}
+.service-section .service-item:hover .service-content h4,
+.service-section .service-item:hover .service-content p,
+.service-section .service-item:hover .service-content a {
+	color: #fff;
+}
+
+.service-section .service-item:hover .service-overlay {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/*========================
+	Start Clients CSS
+==========================*/
+.clients{
+	background-image:url('../images/bg/client-bg.jpg');
+	background-size:cover;
+	background-position:center;
+	padding:50px 0px;
+	position:relative;
+}
+
+.clients .single-clients img {
+	width: 100%;
+	cursor: pointer;
+	text-align: center;
+	float: none;
+	padding: 0 35px;
+}
+/*========================
+	End Clients CSS
+==========================*/
+
+/*=====================
+   Start Faq CSS
+=======================*/
+
+
+/*=========================
+	Start Footer CSS
+===========================*/
+.footer{
+	position:relative;
+}
+.footer .footer-top{
+	padding:100px 0px;
+	position:relative;
+	background:#7c7cd5;
+}
+.footer .footer-top:before{
+	position:absolute;
+	content:"";
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background:#000;
+	opacity:0.1;
+}
+
+.footer .single-footer .social{
+	margin-top:25px;
+}
+.footer .single-footer .social li{
+	display:inline-block;
+	margin-right:10px;
+}
+.footer .single-footer .social li:last-child{
+	margin-right:0px;
+}
+.footer .single-footer .social li a {
+	height: 34px;
+	width: 34px;
+	line-height: 34px;
+	text-align: center;
+	border: 1px solid #fff;
+	text-align: center;
+	padding: 8px;
+	border-radius: 100%;
+	display: block;
+	color:#fff;
+	font-size: 18px;
+}
+.footer .single-footer .social li a:hover{
+	color:#7c7cd5;
+	background:#fff;
+	border-color:transparent;
+}
+
+.footer .single-footer.f-link li a {
+	color: #fff;
+	text-transform: capitalize;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-weight: 400;
+    font-size: 18px;
+}
+.footer .single-footer.f-link li:hover{
+	padding-left:8px;
+}
+.footer .single-footer h2{
+	color:#fff;
+	font-size:20px;
+	font-weight:600;
+	text-transform:capitalize;
+	margin-bottom:40px;
+	padding-bottom:20px;
+	text-transform:capitalize;
+	position:relative;
+}
+.footer .single-footer h2::before{
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0px;
+	height: 3px;
+	width: 50px;
+	background: #fff;
+}
+
+.footer .single-footer p{
+	color:#fff;
+    font-size: 18px;
+}
+
+
+.footer .copyright{
+	background:#7c7cd5;
+	padding:25px 0px 25px 0px;
+	text-align:center;
+}
+.footer .copyright .copyright-content p{
+	color:#fff;
+}
+.footer .copyright .copyright-content p a{
+	color:#fff;
+	font-weight:400;
+	text-decoration:underline;
+	display:inline-block;
+	margin-left:4px;
+}
+/*=========================
+	End Footer CSS
+===========================*/

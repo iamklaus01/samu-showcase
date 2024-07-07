@@ -1,0 +1,81 @@
+@layer primereact, tailwind-base, tailwind-utilities;
+
+@import 'primereact/resources/primereact.min.css' layer(primereact);
+@import 'primereact/resources/themes/tailwind-light/theme.css' layer(primereact);
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+/*===== GENERAL STYLES =====*/
+@font-face {
+  font-family: 'LibreFranklin';
+  src: url('./assets/fonts/LibreFranklin-Regular.woff2') format('woff');
+}
+
+:root {
+  --main-blue: #0000BB;
+  --main-light-blue: #7C7CD5;
+  --double-light-blue: #D9D9FF;
+  --triple-light-blue: #EBEBF4;
+  --main-green: #99d5c9;
+  --main-light-green: #C4EDC4;
+
+  --main-font: "LibreFranklin", sans-serif;
+  --cursive-font: "LibreFranklin", cursive;
+
+  --big-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --smaller-font-size: 0.875rem;
+
+  --main-background: #f1f5f9;
+}
+
+
+@media screen and (min-width: 768px) {
+  :root {
+    --big-font-size: 2.5rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+  line-height: 1.5;
+  color: var(--text-black);
+  font-size: 15px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container{
+  width: 100%;
+  padding: 0 15px;
+}
+
+a{
+  text-decoration: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+button[type="submit"]:not(.with-border) {
+  border: none;
+}
