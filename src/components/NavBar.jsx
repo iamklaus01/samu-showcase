@@ -1,8 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import logo from '../assets/images/logo.png';
 import { Icon } from '@iconify/react';
+import MobileMenu from './MobileMenu';
 
 const NavBar = () => {
+  const [visible, setVisible] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -57,9 +60,11 @@ const NavBar = () => {
               </a>
             </div>
             <div className="flex px-4 justify-end items-center md:hidden">
-              <Icon icon="ic:round-menu" className="header-icon text-2xl"/>
+              <Icon onClick={() => setVisible(true)} icon="ic:round-menu" className="header-icon text-2xl"/>
             </div>
           </div>
+
+          <MobileMenu visible={visible} setVisible={setVisible}/>
         </div>
       </div>
     </div>
