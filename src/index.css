@@ -12,11 +12,9 @@
   @tailwind utilities;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*===== GENERAL STYLES =====*/
-@font-face {
-  font-family: 'LibreFranklin';
-  src: url('./assets/fonts/LibreFranklin-Regular.woff2') format('woff');
-}
 
 :root {
   --main-blue: #0000BB;
@@ -26,8 +24,8 @@
   --main-green: #99d5c9;
   --main-light-green: #C4EDC4;
 
-  --main-font: "LibreFranklin", sans-serif;
-  --cursive-font: "LibreFranklin", cursive;
+  --main-font: "Libre Franklin", sans-serif;
+  --cursive-font: "Libre Franklin", cursive;
 
   --big-font-size: 2rem;
   --normal-font-size: 1rem;
