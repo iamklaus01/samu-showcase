@@ -8,12 +8,12 @@ const Loader = () => {
       console.log(document.querySelector('.preloader').classList);
     };
 
-    // document.addEventListener('DOMContentLoaded', handleLoad);
-    window.addEventListener('load', handleLoad);
+    document.addEventListener('DOMContentLoaded', handleLoad);
+    // window.addEventListener('load', handleLoad);
 
     return () => {
-      // document.removeEventListener('DOMContentLoaded', handleLoad);
-      window.removeEventListener('load', handleLoad);
+      document.removeEventListener('DOMContentLoaded', handleLoad);
+      // window.removeEventListener('load', handleLoad);
     };
   }, []);
 
