@@ -6,12 +6,12 @@ const Loader = () => {
       document.querySelector('.preloader').classList.add('preloader-deactivate');
     };
 
-    document.addEventListener('DOMContentLoaded', handleLoad);
-    // window.addEventListener('load', handleLoad);
+    // document.addEventListener('DOMContentLoaded', handleLoad);
+    window.addEventListener('load', handleLoad);
 
     return () => {
-      document.removeEventListener('DOMContentLoaded', handleLoad);
-      // window.removeEventListener('load', handleLoad);
+      // document.removeEventListener('DOMContentLoaded', handleLoad);
+      window.removeEventListener('load', handleLoad);
     };
   }, []);
 
