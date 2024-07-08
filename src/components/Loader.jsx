@@ -3,7 +3,9 @@ import { useEffect } from 'react';
 const Loader = () => {
   useEffect(() => {
     const handleLoad = () => {
+      console.log('load');
       document.querySelector('.preloader').classList.add('preloader-deactivate');
+      console.log(document.querySelector('.preloader').classList);
     };
 
     // document.addEventListener('DOMContentLoaded', handleLoad);
