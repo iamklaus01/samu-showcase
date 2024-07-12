@@ -93,15 +93,15 @@ const ScheduledInterventionForm = ({on_submit}) => {
                 </div>
 
                 <div className="w-full">
-                    <label htmlFor="conscious" className="text-base mb-2">Etat de conscience du patient</label>
+                    <label htmlFor="respiration" className="text-base mb-2">Respiration (Présente ou Non)</label>
                     <div className="w-full flex flex-wrap justify-between items-center gap-4">
                         <div className="flex items-center ps-4 border border-gray-200 rounded flex-auto">
-                            <input id="conscious-1" type="radio" value="yes" name="conscious" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2" />
-                            <label htmlFor="conscious-1" className="w-full py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Conscient</label>
+                            <input id="respiration-1" type="radio" value="yes" name="respiration" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2" />
+                            <label htmlFor="respiration-1" className="w-full py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Le patient respire</label>
                         </div>
                         <div className="flex items-center ps-4 border border-gray-200 rounded flex-auto">
-                            <input id="conscious-2" type="radio" value="no" name="conscious" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2" />
-                            <label htmlFor="conscious-2" className="w-full py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Pas Conscient</label>
+                            <input id="respiration-2" type="radio" value="no" name="respiration" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2" />
+                            <label htmlFor="respiration-2" className="w-full py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Le patient ne respire pas</label>
                         </div>
                     </div>
                 </div>
