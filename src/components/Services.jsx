@@ -11,7 +11,7 @@ const Services = () => {
         },
         {
             title: "Intervention programmée",
-            icon: "tabler:hospital",
+            icon: "medical-icon:hospital",
             description: "Réservation anticipée à une date et une heure précises, pour un transport néonatal, un transfert hospitalier ou tout autre besoin médical, assurant une prise en charge adaptée, ponctuelle et sécurisée."
         },
         {
@@ -21,7 +21,7 @@ const Services = () => {
         },
         {
             title: "Formation",
-            icon: "charm:graduate-cap",
+            icon: "fa:graduate-cap",
             description: "Programme de formation en premier secours pour le grand public et les professionnels de la santé, visant à enseigner les gestes de premiers secours essentiels pour intervenir efficacement en cas d'urgence."
         }
     ];

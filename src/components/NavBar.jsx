@@ -24,7 +24,7 @@ const NavBar = () => {
 
   return (
     <div className="header-inner">
-      <div className="container">
+      <div className="">
         <div className="inner">
           <div className="w-full hidden md:flex items-center justify-around flex-wrap">
             <div className="w-9/12 md:w-2/12 flex justify-start md:justify-center">
@@ -48,7 +48,7 @@ const NavBar = () => {
             </div>
             <div className="lg:w-3/12 hidden lg:flex justify-center">
               <div className="cta-cover">
-                <a href="#medical-cover" className="btn">Couverture médicale</a>
+                <a href="#medical-cover" className="bg-secondary rounded text-sm text-white shadow px-4 py-3 hover:bg-primary duration-300 ease-in-out">Couverture médicale</a>
               </div>
             </div>
           </div>
